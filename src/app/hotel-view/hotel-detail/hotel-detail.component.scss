@@ -3,6 +3,7 @@
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--line);
+  font-size: 1.4rem;
 }
 
 .description {
@@ -15,7 +16,6 @@
 }
 
 .user-reviews {
-  background-color: yellow;
   flex: 1;
 }
 
@@ -72,5 +72,42 @@
     &:not(:last-child) {
       margin-right: -1.15rem;
     }
+  }
+}
+
+// user-review
+
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+
+  &__text {
+  }
+
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  &__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+  }
+
+  &__user-box {
+  }
+
+  &__user-name {
+  }
+
+  &__user-date {
+  }
+
+  &__rating {
   }
 }
