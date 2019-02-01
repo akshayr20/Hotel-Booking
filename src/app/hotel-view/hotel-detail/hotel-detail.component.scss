@@ -1,9 +1,14 @@
+@import '../../../assets/sass/main';
+
 .details {
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--line);
   font-size: 1.4rem;
+  @media screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
 }
 
 .description {
@@ -13,6 +18,10 @@
   padding: 3rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
+  @media screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .user-reviews {
@@ -67,6 +76,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -74,7 +87,7 @@
     border-radius: 50%;
     border: 3px solid #fff;
     &:not(:last-child) {
-      margin-right: -1.15rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -88,6 +101,10 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
