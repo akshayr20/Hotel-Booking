@@ -65,7 +65,11 @@
     align-items: center;
     @media screen and (max-width: $bp-medium) {
       justify-content: center;
-      padding: 2rem 3rem;
+      padding: 2rem;
+    }
+    @media screen and (max-width: $bp-small) {
+      flex-direction: column;
+      padding: 1.5rem;
     }
   }
 
@@ -74,6 +78,12 @@
     width: 1.75rem;
     margin-right: 2rem;
     fill: currentColor;
+    @media screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 7px;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
 }
 

@@ -1,3 +1,5 @@
+@import '../../assets/sass/main';
+
 :host {
   height: 7rem;
   font-size: 1.4rem;
@@ -7,6 +9,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
 }
 
 .logo {
@@ -16,9 +23,15 @@
 
 .search {
   flex: 0 0 40%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: $bp-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
 
   &__input {
     font-family: inherit;
