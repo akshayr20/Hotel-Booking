@@ -1,7 +1,7 @@
 {
-  "name": "trillo",
+  "name": "Hotel  Booking",
   "version": "0.0.0",
-  "description": "Landing page for trillo App",
+  "description": "Landing page for Hotel  Booking App",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
